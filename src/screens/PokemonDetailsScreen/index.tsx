@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { Platform, StatusBar, Pressable, View } from 'react-native';
+import { Platform, StatusBar, TouchableOpacity } from 'react-native';
 
-import AntDesign from 'react-native-vector-icons/AntDesign';
+import Icon from 'react-native-vector-icons/Feather';
 import { StackScreenProps } from '@react-navigation/stack';
 
-import { LinearGradient } from 'react-native-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient';
 import { darken, lighten } from 'polished';
 
 import PokemonInfoDetails from '../../components/PokemonInfoDetails';
@@ -42,18 +42,19 @@ const PokemonDetailsScreen = ({ route, navigation }: Props) => {
         paddingTop: 30,
       }}
     >
-      <AntDesign
-        name="left"
-        size={26}
-        color={darken(0.28, bgColor)}
-        style={{
-          marginLeft: 10,
-        }}
-      />
-      <Pressable
+      <TouchableOpacity
         onPress={navigation.goBack}
         style={{ flexDirection: 'row', alignItems: 'center' }}
-      />
+      >
+        <Icon
+          name="arrow-left"
+          size={30}
+          color={darken(0.28, bgColor)}
+          style={{
+            marginLeft: 10,
+          }}
+        />
+      </TouchableOpacity>
       <PokemonInfoDetails pokemon={pokemon} />
     </LinearGradient>
   );

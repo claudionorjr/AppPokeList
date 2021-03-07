@@ -1,4 +1,4 @@
-import { TypesColorsMap } from '../constants';
+import { TypesColorsMap } from '../constants/typesColorsMap';
 
 export interface PokemonItemResponse {
   name: string;

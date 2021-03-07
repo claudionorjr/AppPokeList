@@ -30,6 +30,7 @@
       "prettier/prettier": ["error", {
         "endOfLine":"auto"
       }],
+      "function-paren-newline":"off",
       "camelcase":"off",
       "no-plusplus":"off",
       "no-await-in-loop":"off",

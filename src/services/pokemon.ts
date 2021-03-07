@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
 
-import { Pokemon, PokemonsResponse } from '../@types/pokemon';
+import { Pokemon, PokemonsResponse } from '../types/pokemon';
 import api from './api.config';
 
 const getPokemons = (url: string): Promise<PokemonsResponse> =>

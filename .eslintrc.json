@@ -30,6 +30,10 @@
       "prettier/prettier": ["error", {
         "endOfLine":"auto"
       }],
+      "camelcase":"off",
+      "no-plusplus":"off",
+      "no-await-in-loop":"off",
+      "react/require-default-props": "off",
       "@typescript-eslint/no-empty-function": "off",
       "eqeqeq":"off",
       "react/no-unused-prop-types": "off",
@@ -54,7 +58,7 @@
       "react/jsx-closing-bracket-location": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "react/jsx-one-expression-per-line": "off",
-      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/rules-of-hooks": "off",
       "react-hooks/exhaustive-deps": "off",
       "linebreak-style": "off",
       "@typescript-eslint/no-explicit-any": "off",
